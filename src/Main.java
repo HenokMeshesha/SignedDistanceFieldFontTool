@@ -93,7 +93,7 @@ public class Main extends Application {
 
         stage.setScene(scene);
         // Set the Title to the Stage
-        stage.setTitle("A simple FXML Example");
+        stage.setTitle("SDF FONT TOOL");
         // Display the Stage
         stage.show();
 
