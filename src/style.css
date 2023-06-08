@@ -1,0 +1,88 @@
+.check-box{
+-fx-focus-color: #a2a2a2;
+-fx-faint-focus-color: transparent;
+
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected{
+
+-fx-background-color: #a2a2a2;
+-fx-border-color: transparent;
+
+
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover{
+
+-fx-background-color: #a2a2a2;
+
+
+
+}
+
+
+.button{
+-fx-focus-color: #a2a2a2;
+-fx-faint-focus-color: transparent;
+
+}
+.text-field{
+    -fx-focus-color: #a2a2a2;
+    -fx-faint-focus-color: transparent;
+
+
+}
+
+.scroll-pane .scroll-bar:vertical{
+     -fx-pref-width: 13;
+
+}
+
+.scroll-pane .scroll-bar:horizontal{
+    -fx-pref-height: 13;
+}
+
+.scroll-pane .increment-arrow{
+
+    -fx-pref-width: 8;
+     -fx-pref-height: 5;
+
+}
+
+.scroll-pane .decrement-arrow{
+
+    -fx-pref-width: 8;
+     -fx-pref-height: 5;
+
+}
+
+.scroll-pane .scroll-bar:horizontal .decrement-arrow{
+
+    -fx-pref-width: 5;
+     -fx-pref-height: 8;
+
+}
+.scroll-pane .scroll-bar:horizontal .increment-arrow{
+
+    -fx-pref-width: 5;
+     -fx-pref-height: 8;
+
+}
+
+
+.text-area{
+-fx-focus-color: #a2a2a2;
+-fx-faint-focus-color: transparent;
+
+}
+
+.scroll-pane{
+-fx-focus-color: #a2a2a2;
+-fx-faint-focus-color: transparent;
+
+}
+
+.progress-bar{
+-fx-accent: #a2a2a2;
+
+}

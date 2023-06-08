@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+
+<?language JavaScript?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="805.0" prefWidth="1114.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <AnchorPane layoutY="-2.0" prefHeight="805.0" prefWidth="296.0" style="-fx-background-color: #f0f0f0;">
+         <children>
+            <CheckBox fx:id="cb_system" layoutX="23.0" layoutY="32.0" mnemonicParsing="false" onAction="#cb_system_action" style="-fx-focus-color: #a5a5a5; -fx-faint-focus-color: transparent;" text="System" />
+            <CheckBox fx:id="cb_font" layoutX="23.0" layoutY="67.0" mnemonicParsing="false" onAction="#cb_font_action" text="File" />
+            <ProgressBar fx:id="loading_bar" layoutX="23.0" layoutY="711.0" prefHeight="18.0" prefWidth="250.0" progress="0.0" />
+            <Button fx:id="gen_sdf" layoutX="23.0" layoutY="669.0" mnemonicParsing="false" onAction="#gen_sdf_action" prefHeight="25.0" prefWidth="250.0" text="Generate SDF" />
+            <TextArea fx:id="txt_area" layoutX="23.0" layoutY="298.0" prefHeight="134.0" prefWidth="250.0" />
+            <Accordion layoutX="28.0" layoutY="180.0" />
+            <Button fx:id="fontChooser" layoutX="246.0" layoutY="64.0" mnemonicParsing="false" onAction="#fontFileChooser" prefHeight="25.0" prefWidth="27.0" text="..." />
+            <Label layoutX="14.0" layoutY="274.0" text="Selected Characters" />
+            <Label layoutX="14.0" layoutY="101.0" text="Character Set" />
+            <Label layoutX="14.0" layoutY="7.0" text="Font" />
+            <Label layoutX="14.0" layoutY="441.0" text="SVG" />
+            <CheckBox fx:id="cb_svg" layoutX="23.0" layoutY="464.0" mnemonicParsing="false" onAction="#cb_svg_action" text="File" />
+            <Button fx:id="svg_chooser" layoutX="246.0" layoutY="459.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="27.0" text="..." />
+            <ComboBox fx:id="combo_system" layoutX="91.0" layoutY="27.0" onAction="#combo_sys_action" prefHeight="25.0" prefWidth="182.0" style="-fx-background-color: #e9e9e9; -fx-border-color: #c9c9c9;" />
+            <Button fx:id="bt_save" layoutX="24.0" layoutY="749.0" mnemonicParsing="false" onAction="#button" prefHeight="25.0" prefWidth="119.0" text="Save" />
+            <ComboBox fx:id="combo_size" layoutX="23.0" layoutY="558.0" onKeyTyped="#combo_sys_action" prefHeight="27.0" prefWidth="65.0" promptText="32" style="-fx-background-color: #e9e9e9; -fx-border-color: #c9c9c9;" />
+            <ScrollPane fx:id="scrollPane" layoutX="23.0" layoutY="128.0" prefHeight="108.0" prefWidth="250.0" />
+            <Button id="bt_dis0" fx:id="bt_font" alignment="BASELINE_LEFT" layoutX="91.0" layoutY="64.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="151.0" style="-fx-background-color: #e9e9e9; -fx-border-color: #c9c9c9; -fx-text-fill: #a9a9a9;" />
+            <Button id="bt_dis1" fx:id="bt_svg" alignment="BOTTOM_LEFT" layoutX="91.0" layoutY="459.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="151.0" style="-fx-background-color: #e9e9e9; -fx-border-color: #c9c9c9; -fx-text-fill: #a9a9a9;" />
+            <Button fx:id="bt_save_as" layoutX="152.0" layoutY="749.0" mnemonicParsing="false" onAction="#button" prefHeight="25.0" prefWidth="119.0" text="Save As" />
+            <ComboBox fx:id="combo_padding" layoutX="111.0" layoutY="558.0" onKeyTyped="#combo_sys_action" prefHeight="27.0" prefWidth="71.0" promptText="8" style="-fx-background-color: #e9e9e9; -fx-border-color: #c9c9c9;" />
+            <ComboBox fx:id="combo_spread" layoutX="203.0" layoutY="558.0" onKeyTyped="#combo_sys_action" prefHeight="27.0" prefWidth="71.0" promptText="1" style="-fx-background-color: #e9e9e9; -fx-border-color: #c9c9c9;" />
+            <CheckBox fx:id="cb_svg1" layoutX="24.0" layoutY="244.0" mnemonicParsing="false" onAction="#cb_svg_action" text="Bold" />
+            <CheckBox fx:id="cb_svg11" layoutX="82.0" layoutY="244.0" mnemonicParsing="false" onAction="#cb_svg_action" text="Italic" />
+            <ComboBox fx:id="combo_atls_res_w" layoutX="68.0" layoutY="595.0" onKeyTyped="#combo_sys_action" prefHeight="27.0" prefWidth="71.0" promptText="512" style="-fx-background-color: #e9e9e9; -fx-border-color: #c9c9c9;" />
+            <ComboBox fx:id="combo_atls_res_h" layoutX="201.0" layoutY="595.0" onKeyTyped="#combo_sys_action" prefHeight="27.0" prefWidth="71.0" promptText="512" style="-fx-background-color: #e9e9e9; -fx-border-color: #c9c9c9;" />
+            <CheckBox layoutX="23.0" layoutY="505.0" mnemonicParsing="false" text="Auto Padding/Spread" />
+            <Label layoutX="23.0" layoutY="539.0" text="Size" />
+            <Label layoutX="112.0" layoutY="539.0" text="Padding" />
+            <Label layoutX="204.0" layoutY="539.0" text="Spread" />
+            <Button fx:id="gen_raster" layoutX="23.0" layoutY="633.0" mnemonicParsing="false" onAction="#gen_raster_action" prefHeight="25.0" prefWidth="250.0" text="Generate Raster" />
+            <Label layoutX="26.0" layoutY="601.0" text="Width" />
+            <Label layoutX="156.0" layoutY="600.0" text="Height" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="296.0" prefHeight="814.0" prefWidth="827.0" style="-fx-background-color: black; -fx-background-radius: 5, 5, 5, 5;">
+         <children>
+            <HBox prefHeight="814.0" prefWidth="827.0" style="-fx-alignment: center; -fx-background-color: black;">
+               <children>
+                  <ScrollPane prefHeight="814.0" prefWidth="827.0" style="-fx-background-color: black;">
+                     <content>
+                        <HBox prefHeight="812.0" prefWidth="825.0" style="-fx-alignment: center; -fx-background-color: black;">
+                           <children>
+                              <ImageView fx:id="image_view" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/Henok/Desktop/My%20stuff/Assets/fonts/SFUI.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
