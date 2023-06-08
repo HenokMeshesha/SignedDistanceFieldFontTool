@@ -63,7 +63,7 @@
                            <children>
                               <ImageView fx:id="image_view" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="file:/C:/Users/Henok/Desktop/My%20stuff/Assets/fonts/SFUI.png" />
+                                    <Image url="../image.png" />
                                  </image>
                               </ImageView>
                            </children>
