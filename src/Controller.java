@@ -225,7 +225,7 @@ public class Controller implements Initializable {
 
             BufferedImage b = null;
             try {
-                b = ImageIO.read(new File("/C:\\Users\\Henok\\IdeaProjects\\DistanceFieldFontApp\\arc.png"));
+                b = ImageIO.read(new File("../arc.png"));
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -248,7 +248,7 @@ public class Controller implements Initializable {
             //System.out.println(ii.getWidth() + " " + ii.getHeight());
 
             try {
-                ImageIO.write(bb, "png", new File("C:\\Users\\Henok\\IdeaProjects\\DistanceFieldFontApp\\arc2.png"));
+                ImageIO.write(bb, "png", new File("../arc2.png"));
             } catch (Exception ignored) {
 
             }
